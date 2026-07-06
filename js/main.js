@@ -89,6 +89,12 @@ form.addEventListener('submit', async (e) => {
     form.reportValidity();
     return;
   }
+  if (f.consent && !f.consent.checked) {
+    f.consent.setCustomValidity('Merci de cocher cette case pour que nous puissions traiter votre demande.');
+    form.reportValidity();
+    f.consent.setCustomValidity('');
+    return;
+  }
 
   // Tant que la clé Web3Forms n'est pas renseignée : repli mailto
   if (!f.access_key || f.access_key.value === KEY_PLACEHOLDER) {

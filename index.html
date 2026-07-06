@@ -309,7 +309,14 @@
         <div class="field"><label for="event">Événement (date et lieu)</label><input id="event" name="event" type="text" placeholder="Ex. Festival X, 12 juillet 2026, Paris" /></div>
         <div class="field"><label for="affluence">Affluence attendue</label><input id="affluence" name="affluence" type="text" placeholder="Ex. 5 000 personnes par jour" /></div>
         <div class="field field--full"><label for="message">Votre message</label><textarea id="message" name="message" rows="4" placeholder="Parlez-nous de votre besoin…"></textarea></div>
+        <div class="field field--full field--consent">
+          <label class="consent">
+            <input type="checkbox" id="consent" name="consent" required />
+            <span>J'accepte que les informations saisies soient utilisées pour traiter ma demande et me recontacter. <a href="mentions-legales.html#rgpd">En savoir plus</a>.</span>
+          </label>
+        </div>
         <button type="submit" class="btn btn--primary btn--block">Envoyer ma demande</button>
+        <p class="contact__privacy">Vos données servent uniquement à répondre à votre demande. Aucun cookie de suivi, aucune revente. Voir les <a href="mentions-legales.html#rgpd">mentions légales</a>.</p>
       </form>
       <p class="contact__alt">Ou écrivez-nous directement&nbsp;: <a href="mailto:easypeezy.ep@gmail.com">easypeezy.ep@gmail.com</a></p>
     </div>
